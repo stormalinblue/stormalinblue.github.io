@@ -1,6 +1,49 @@
 ---
 ---
 
-$font-family-base: Georgia, "Times New Roman", Times, serif;
-
 @import "./bootstrap-4.3.1/scss/bootstrap";
+
+$purple: #660266;
+$orange: #fc8014;
+$aqua: #ccfcce;
+$lighterorange: lighten($orange, 25%);
+$shadow: 0 10px 0 0px rgba(50, 50, 50, 0.3);
+
+body {
+    font-family: font-family-serif;
+}
+
+.navbar {
+    background-color: $orange;
+    box-shadow: $shadow;
+}
+
+.btn-primary {
+    background-color: lighten($purple, 5%);
+    border: none;
+    border-radius: 0;
+    box-shadow: $shadow;
+}
+
+.btn-primary:hover {
+    background-color: $purple;
+}
+
+.jumbotron {
+    background-color: $aqua;
+    // color: #FFF;
+    border-radius: 0;
+}
+
+.card {
+    border-radius: 0;
+    box-shadow: $shadow;
+    background-color: $aqua;
+    border: none;
+
+    .card-footer {
+        background-color: $orange;
+        border-radius: inherit;
+        border: none;
+    }
+}

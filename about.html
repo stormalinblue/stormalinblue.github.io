@@ -3,38 +3,34 @@ layout: default
 title: About stormalinblue
 heading: About Muktaka Joshipura
 ---
-<div class="container col-lg-8 col-12">
-    <div class="row">
-        <div class="col">
-            <ul class="list-group">
-                <li class="list-group-item"><i class="fab fa-github"></i> <a
-                        href="https://github.com/stormalinblue">GitHub</a>
-                </li>
-                <li class="list-group-item"><i class="fab fa-linkedin-in"></i> <a
-                        href="https://linkedin.com/in/mjoshipura">LinkedIn</a></li>
-                <li class="list-group-item"><i class="fab fa-reddit-alien"></i> <a
-                        href="https://reddit.com/user/stormalin_blue">Reddit</a></li>
-            </ul>
-        </div>
-        <div class="col">
-            <article class="container-fluid">
-                <p>
-                    I'm a sophomore at the Georgia Institute of Technology, Atlanta, GA. I'm a Computer Science major
-                    interested
-                    in code, math, and balloons.
-                </p>
-                <p>
-                    I work with Python and C++ in competitive algorithm programming. I participate in the Georgia Tech
-                    Programming Team and have represented India at the international level at the SEARCC's International
-                    Schools' Software Competition.
-                </p>
-                <p>
-                    I am a primary contributor to my high school's election system, which is in use for 4 years now.
-                    This
-                    has
-                    given me experience with TypeScript, jQuery, and npm.
-                </p>
-            </article>
-        </div>
+<div class="container col-lg-6 col-12">
+    <div class="links">
+        <p>
+            {% for contact in site.data.contacts %}
+            <a href="{{ contact.href }}" class="btn btn-primary"><i class="{{ contact.logo }}"></i>
+                {{ contact.name }}</a>
+            {% endfor %}
+        </p>
+    </div>
+    <hr>
+    <div>
+        <article class="container-fluid">
+            <p>
+                I'm a sophomore at the Georgia Institute of Technology, Atlanta, GA. I'm a Computer Science major
+                interested
+                in code, math, and balloons.
+            </p>
+            <p>
+                I work with Python and C++ in competitive algorithm programming. I participate in the Georgia Tech
+                Programming Team and have represented India at the international level at the SEARCC's International
+                Schools' Software Competition.
+            </p>
+            <p>
+                I am a primary contributor to my high school's election system, which is in use for 4 years now.
+                This
+                has
+                given me experience with TypeScript, jQuery, and npm.
+            </p>
+        </article>
     </div>
 </div>
