@@ -1,0 +1,29 @@
+---
+layout: default
+title: Home
+heading: The Senior Chip Eater Blog
+---
+<div class="container col-xl-6 col-12">
+  <h3>Latest Posts</h3>
+
+  <hr>
+
+  <div class="card-deck">
+
+    {% for post in site.posts %}
+      <div class="card">
+        <div class="card-body">
+          <h5>{{ post.heading }}</h5>
+          <p class="text-muted">{{ post.subheading }}</p>
+
+          <a href="{{ post.url }}" class="btn btn-primary stretched-link">Read more</a>
+        </div>
+
+        <div class="card-footer text-muted">
+          <!-- Date formatting from http://alanwsmith.com/jekyll-liquid-date-formatting-examples -->
+          {{ post.date | date: '%B %d, %Y' }}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>

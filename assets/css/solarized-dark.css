@@ -1,0 +1,283 @@
+pre {
+    padding: 1rem;
+    overflow-x: scroll;
+}
+
+/* To counter bootstrap setting the normal color to a dark color */
+pre code {
+    color: rgb(131, 148, 150);
+}
+
+code {
+    white-space: pre-wrap;
+}
+
+span.smallcaps {
+    font-variant: small-caps;
+}
+
+span.underline {
+    text-decoration: underline;
+}
+
+div.column {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+}
+
+a.sourceLine {
+    display: inline-block;
+    line-height: 1.25;
+}
+
+a.sourceLine {
+    pointer-events: none;
+    color: inherit;
+    text-decoration: inherit;
+}
+
+a.sourceLine:empty {
+    height: 1.2em;
+}
+
+.sourceCode {
+    overflow: visible;
+}
+
+code.sourceCode {
+    white-space: pre;
+    position: relative;
+}
+
+div.sourceCode {
+    margin: 1em 0;
+}
+
+pre.sourceCode {
+    margin: 0;
+}
+
+@media screen {
+    div.sourceCode {
+        overflow: auto;
+    }
+}
+
+@media print {
+    code.sourceCode {
+        white-space: pre-wrap;
+    }
+
+    a.sourceLine {
+        text-indent: -1em;
+        padding-left: 1em;
+    }
+}
+
+pre.numberSource a.sourceLine {
+    position: relative;
+    left: -4em;
+}
+
+pre.numberSource a.sourceLine::before {
+    content: attr(title);
+    position: relative;
+    left: -1em;
+    text-align: right;
+    vertical-align: baseline;
+    border: none;
+    pointer-events: all;
+    display: inline-block;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding: 0 4px;
+    width: 4em;
+    background-color: #002b36;
+    color: #586e75;
+}
+
+pre.numberSource {
+    margin-left: 3em;
+    border-left: 1px solid #586e75;
+    padding-left: 4px;
+}
+
+div.sourceCode {
+    color: #839496;
+    background-color: #002b36;
+}
+
+@media screen {
+    a.sourceLine::before {
+        text-decoration: underline;
+    }
+}
+
+/* Normal */
+code span {
+    color: #839496;
+}
+
+/* Alert */
+code span.al {
+    color: #d33682;
+    font-weight: bold;
+}
+
+/* Annotation */
+code span.an {
+    color: #268bd2;
+}
+
+/* Attribute */
+code span.at {
+    color: #268bd2;
+}
+
+/* BaseN */
+code span.bn {
+    color: #2aa198;
+}
+
+/* BuiltIn */
+code span.bu {
+    color: #cb4b16;
+}
+
+/* ControlFlow */
+code span.cf {
+    color: #859900;
+    font-weight: bold;
+}
+
+/* Char */
+code span.ch {
+    color: #2aa198;
+}
+
+/* Constant */
+code span.cn {
+    color: #2aa198;
+    font-weight: bold;
+}
+
+/* Comment */
+code span.co {
+    color: #586e75;
+    font-style: italic;
+}
+
+/* CommentVar */
+code span.cv {
+    color: #2aa198;
+}
+
+/* Documentation */
+code span.do {
+    color: #dc322f;
+}
+
+/* DataType */
+code span.dt {
+    color: #b58900;
+    font-weight: bold;
+}
+
+/* DecVal */
+code span.dv {
+    color: #2aa198;
+}
+
+/* Error */
+code span.er {
+    color: #dc322f;
+    text-decoration: underline;
+}
+
+/* Extension */
+code span.ex {
+    color: #268bd2;
+    font-weight: bold;
+}
+
+/* Float */
+code span.fl {
+    color: #2aa198;
+}
+
+/* Function */
+code span.fu {
+    color: #268bd2;
+}
+
+/* Import */
+code span.im {
+    color: #2aa198;
+}
+
+/* Information */
+code span.in {
+    color: #b58900;
+}
+
+/* Keyword */
+code span.kw {
+    color: #859900;
+    font-weight: bold;
+}
+
+/* Operator */
+code span.op {
+    color: #859900;
+}
+
+/* Other */
+code span.ot {
+    color: #859900;
+}
+
+/* Preprocessor */
+code span.pp {
+    color: #cb4b16;
+}
+
+/* RegionMarker */
+code span.re {
+    color: #268bd2;
+    background-color: #073642;
+}
+
+/* SpecialChar */
+code span.sc {
+    color: #dc322f;
+}
+
+/* SpecialString */
+code span.ss {
+    color: #dc322f;
+}
+
+/* String */
+code span.st {
+    color: #2aa198;
+}
+
+/* Variable */
+code span.va {
+    color: #268bd2;
+}
+
+/* VerbatimString */
+code span.vs {
+    color: #2aa198;
+}
+
+/* Warning */
+code span.wa {
+    color: #cb4b16;
+}

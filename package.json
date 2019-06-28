@@ -1,0 +1,38 @@
+{
+  "name": "stormalinblue.github.io",
+  "version": "1.0.0",
+  "description": "Muktaka Joshipura's Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp build && jekyll build",
+    "dev": "export GEM_HOME=\"$HOME/gems\" && export PATH=\"$HOME/gems/bin:$PATH\" && concurrently --kill-others -n \"gulp,jekyll\" -c \"bgGreen,bgYellow\" \"gulp watch\" \"bundle exec jekyll serve\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stormalinblue/stormalinblue.github.io.git"
+  },
+  "keywords": [
+    "muktaka",
+    "joshipura",
+    "blog",
+    "math",
+    "python",
+    "computers"
+  ],
+  "author": "Muktaka Joshipura",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stormalinblue/stormalinblue.github.io/issues"
+  },
+  "homepage": "https://github.com/stormalinblue/stormalinblue.github.io#readme",
+  "devDependencies": {
+    "concurrently": "^4.1.0"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "bootstrap": "^4.3.1",
+    "gulp-mathjax-page": "^1.1.0",
+    "gulp-pandoc": "^0.2.2"
+  }
+}

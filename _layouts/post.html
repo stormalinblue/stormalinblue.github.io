@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<article class="container col-12 col-lg-6">
+    <!-- Date formatting from http://alanwsmith.com/jekyll-liquid-date-formatting-examples -->
+    <p>
+        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%B %d, %Y' }}</time>
+        <a href="/about.html" rel="author">Muktaka Joshipura</a>
+    </p>
+
+    <hr>
+
+    {{ content }}
+</article>

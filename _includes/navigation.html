@@ -1,0 +1,16 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <a href="/" class="navbar-brand">Senior Chip Eater</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sce" aria-controls="sce"
+        aria-label="Toggle Navigation Links" aria-expanded="false">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="sce">
+        <div class="navbar-nav">
+            {% for item in site.data.navigation %}
+            <a href="{{ item.link }}"
+                class="nav-item nav-link {% if page.url == item.link %}active{% endif %}">{{ item.name }}</a>
+            {% endfor %}
+        </div>
+    </div>
+</nav>
